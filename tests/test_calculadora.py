@@ -1,6 +1,6 @@
 import pytest
 
-from src.calculadora import dividir, fatorial, multiplicar, potencia, somar, subtrair
+from src.calculadora import celsius_para_fahrenheit, dividir, fatorial, multiplicar, potencia, somar, subtrair
 
 
 def test_somar():
@@ -46,3 +46,14 @@ def test_fatorial_recursivo():
 def test_fatorial_negativo():
     with pytest.raises(ValueError):
         fatorial(-1)
+
+
+def test_celsius_para_fahrenheit():
+    assert celsius_para_fahrenheit(0) == 32
+    assert celsius_para_fahrenheit(100) == 212
+    assert celsius_para_fahrenheit(-40) == -40
+
+
+def test_celsius_para_fahrenheit_tipo_invalido():
+    with pytest.raises(TypeError):
+        celsius_para_fahrenheit("quente")

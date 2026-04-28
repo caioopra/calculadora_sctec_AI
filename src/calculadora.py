@@ -26,3 +26,9 @@ def fatorial(n):
     if n == 0:
         return 1
     return n * fatorial(n - 1)
+
+
+def celsius_para_fahrenheit(c):
+    if not isinstance(c, (int, float)):
+        raise TypeError("A temperatura deve ser um número")
+    return c * 9 / 5 + 32

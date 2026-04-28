@@ -1,4 +1,4 @@
-from src.calculadora import somar, subtrair, multiplicar, dividir, potencia, fatorial
+from src.calculadora import celsius_para_fahrenheit, somar, subtrair, multiplicar, dividir, potencia, fatorial
 
 
 def main():
@@ -9,7 +9,7 @@ def main():
     print(f"10 / 2 = {dividir(10, 2)}")
     print(f"2 ^ 8 = {potencia(2, 8)}")
     print(f"5! = {fatorial(5)}")
-
+    print(f"25°C = {celsius_para_fahrenheit(25)}°F")
 
 if __name__ == "__main__":
     main()
