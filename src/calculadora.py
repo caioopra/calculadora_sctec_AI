@@ -20,6 +20,12 @@ def potencia(base, expoente):
     return base ** expoente
 
 
+def raiz_quadrada(n):
+    if n < 0:
+        raise ValueError("Não é possível calcular raiz quadrada de número negativo")
+    return n ** 0.5
+
+
 def fatorial(n):
     if n < 0:
         raise ValueError("Não é possível calcular fatorial de número negativo")

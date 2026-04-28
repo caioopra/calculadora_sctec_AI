@@ -1,6 +1,6 @@
 import pytest
 
-from src.calculadora import dividir, fatorial, multiplicar, potencia, somar, subtrair
+from src.calculadora import dividir, fatorial, multiplicar, potencia, raiz_quadrada, somar, subtrair
 
 
 def test_somar():
@@ -46,3 +46,14 @@ def test_fatorial_recursivo():
 def test_fatorial_negativo():
     with pytest.raises(ValueError):
         fatorial(-1)
+
+
+def test_raiz_quadrada():
+    assert raiz_quadrada(4) == 2.0
+    assert raiz_quadrada(0) == 0.0
+    assert raiz_quadrada(2) == pytest.approx(1.4142135623730951)
+
+
+def test_raiz_quadrada_negativa():
+    with pytest.raises(ValueError):
+        raiz_quadrada(-1)
