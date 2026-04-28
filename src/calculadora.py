@@ -20,6 +20,12 @@ def potencia(base, expoente):
     return base ** expoente
 
 
+def media(numeros):
+    if not numeros:
+        raise ValueError("Não é possível calcular a média de uma lista vazia")
+    return sum(numeros) / len(numeros)
+
+
 def fatorial(n):
     if n < 0:
         raise ValueError("Não é possível calcular fatorial de número negativo")
