@@ -1,4 +1,4 @@
-from src.calculadora import dividir, media, multiplicar, potencia, somar, subtrair
+from src.calculadora import dividir, fatorial, media, multiplicar, potencia, somar, subtrair
 
 
 def main():
@@ -9,6 +9,7 @@ def main():
     print(f"10 / 2 = {dividir(10, 2)}")
     print(f"2 ^ 8 = {potencia(2, 8)}")
     print(f"media de [2, 4, 6] = {media([2, 4, 6])}")
+    print(f"5! = {fatorial(5)}")
 
 
 if __name__ == "__main__":

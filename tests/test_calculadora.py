@@ -1,6 +1,6 @@
 import pytest
 
-from src.calculadora import dividir, media, multiplicar, potencia, somar, subtrair
+from src.calculadora import dividir, fatorial, media, multiplicar, potencia, somar, subtrair
 
 
 def test_somar():
@@ -43,3 +43,16 @@ def test_media():
 def test_media_lista_vazia():
     with pytest.raises(ValueError):
         media([])
+
+
+def test_fatorial_caso_base():
+    assert fatorial(0) == 1
+
+
+def test_fatorial_recursivo():
+    assert fatorial(5) == 120
+
+
+def test_fatorial_negativo():
+    with pytest.raises(ValueError):
+        fatorial(-1)
