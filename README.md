@@ -9,15 +9,16 @@ Repositório de exemplo para aulas de Git e workflows com agentes de IA. Impleme
 - `multiplicar(a, b)`
 - `dividir(a, b)` — lança `ValueError` ao dividir por zero
 - `potencia(base, expoente)`
+- `media(numeros)` — calcula a média de uma lista e lança `ValueError` se ela estiver vazia
 
 ## Como executar
 
 ```bash
-python main.py
+uv run python main.py
 ```
 
 ## Como rodar os testes
 
 ```bash
-python -m pytest
+uv run python -m pytest
 ```

@@ -18,3 +18,9 @@ def dividir(a, b):
 
 def potencia(base, expoente):
     return base ** expoente
+
+
+def media(numeros):
+    if not numeros:
+        raise ValueError("Não é possível calcular a média de uma lista vazia")
+    return sum(numeros) / len(numeros)
