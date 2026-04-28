@@ -12,7 +12,7 @@ def multiplicar(a, b):
 
 def dividir(a, b):
     if b == 0:
-        raise ValueError("Não é possível dividir por zero")
+        raise ValueError("Divisor não pode ser zero")
     return a / b
 
 
